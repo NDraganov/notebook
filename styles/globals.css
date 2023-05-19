@@ -1,1 +1,22 @@
-
+* {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-green: #bfdb38;
+  --dark-green-opacity: #bfdb3880;
+  --neon-green: #f0ff42;
+  --light-green: #e5fdd1;
+  --light-yellow: #ffffe8;
+  --grey: #404258;
+  --red: #e76161;
+}
+body {
+  background-color: var(--light-yellow);
+}

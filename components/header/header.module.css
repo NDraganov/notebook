@@ -1,0 +1,7 @@
+.header {
+  background-color: var(--dark-green);
+  padding: 1rem 2rem;
+}
+.header h2 {
+  color: var(--grey);
+}

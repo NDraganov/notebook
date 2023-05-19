@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.footer .section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer a svg {
+  color: var(--dark-green);
+  font-size: 2.5rem;
+}
+.footer a svg:hover {
+  color: var(--grey);
+}
+.footer div p {
+  color: var(--grey);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.footer .section p {
+  color: var(--dark-green);
+}

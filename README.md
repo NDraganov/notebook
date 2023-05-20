@@ -1,38 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NoteBook
 
-## Getting Started
+NoteBook is a simple website where you can take digital notes.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Features
+
+#### Layout
+
+- Header with logo and title
+- Main page
+- Footer with my social media links, my name and the current year
+
+#### Pages and components
+
+- One-page website
+- Initially loaded the page displaying a form with inputs for the title and the content
+- Below the form is position the list with the taken notes
+
+### Screenshots
+
+![Desktop|100x100](./public/images/desktop.png "Desktop")
+![Desktop-data](./public/images/desktop-data.png "Desktop-data")
+![Desktop-bottom](./public/images/desktop-bottom.png "Desktop-bottom")
+<img src="./public/images/mobile.png" alt="mobile" width="300" height="500"/>
+<img src="./public/images/mobile-data.png" alt="mobile-data" width="300" height="500"/>
+<img src="./public/images/mobile-bottom.png" alt="mobile-bottom" width="300" height="500"/>
+
+### Links
+
+[Live site](https://notebook-rouge.vercel.app)
+[Source code](https://github.com/NDraganov/notebook)
+
+## Development
+
+### Built with
+
+- Next.js
+- CSS using the grid and the flex
+- React icons
+
+### What I've learned
+
+With this project, I learn how to programmatically add props
+
+```js
+const handleClick = () => {
+  props.onDelete(props.id);
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+And how to filter object from an array and remove it from it
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```js
+const deleteNote = (id) => {
+  setNotes((allNotes) => {
+    return allNotes.filter((note, index) => {
+      return index !== id;
+    });
+  });
+};
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- I create new Next.js project using "create-next-app" in Hyper Terminal
+- Then I create new GitHub repository
+- Then I connect local to remote repository
+  - git init
+  - git add.
+  - git commit -m "message"
+  - git remote add origin "URL"
+  - git push -u origin master
+- I used the default "npm run build" command to optimize the project for production
+- Then I used "npm run start" to expect the production version
+- I used the Vercel platform for publishing my project

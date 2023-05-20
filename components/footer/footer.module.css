@@ -19,7 +19,7 @@
 .footer div p {
   color: var(--grey);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 .footer .section p {
   color: var(--dark-green);

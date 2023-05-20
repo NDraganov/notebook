@@ -43,7 +43,7 @@ export default function Home() {
                 id={id}
                 title={noteItem.title}
                 content={noteItem.content}
-                click={deleteNote}
+                onDelete={deleteNote}
               />
             </ul>
           );

@@ -2,20 +2,23 @@ import { useState } from "react";
 
 import classes from "./create-note.module.css";
 
-export default function CreateNote() {
+export default function CreateNote(props) {
   const [note, setNote] = useState({
     title: "",
     content: "",
   });
 
   const handleChange = (event) => {
-    const value = event.target.value;
-    setNote(value);
+    const { name, value } = event.target;
+    setNote((notes) => {
+      return { ...notes, [name]: value };
+    });
   };
 
   const submitNote = (event) => {
     event.preventDefault();
     setNote({ title: "", content: "" });
+    props.onAdd(note);
   };
   return (
     <div className={classes.note}>

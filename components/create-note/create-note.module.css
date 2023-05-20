@@ -41,3 +41,13 @@
   background-color: var(--grey);
   box-shadow: 2px 1px 3px var(--grey);
 }
+
+@media screen and (max-width: 450px) {
+  .note form {
+    width: 90vw;
+  }
+  .note form button {
+    top: 32.5vh;
+    left: 38vw;
+  }
+}

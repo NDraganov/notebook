@@ -20,7 +20,15 @@
   color: var(--grey);
   font-size: 1.2rem;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 .footer .section p {
   color: var(--dark-green);
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

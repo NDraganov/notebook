@@ -37,7 +37,9 @@ export default function CreateNote(props) {
           rows="7"
           placeholder="Take a note ..."
         ></textarea>
-        <button onClick={submitNote}>ADD</button>
+        <div>
+          <button onClick={submitNote}>ADD</button>
+        </div>
       </form>
     </div>
   );

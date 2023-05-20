@@ -21,10 +21,10 @@
   font-size: 1.2rem;
   resize: none;
 }
+.note form div {
+  text-align: right;
+}
 .note form button {
-  position: absolute;
-  left: 40vw;
-  top: 28.5vh;
   background: var(--dark-green);
   color: var(--light-yellow);
   border: none;
@@ -45,9 +45,5 @@
 @media screen and (max-width: 450px) {
   .note form {
     width: 90vw;
-  }
-  .note form button {
-    top: 32.5vh;
-    left: 38vw;
   }
 }

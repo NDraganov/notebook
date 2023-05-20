@@ -1,6 +1,6 @@
 import classes from "./note-item.module.css";
 
-export default function NoteItem({ title, content }) {
+export default function NoteItem({ title, content, click }) {
   return (
     <li>
       <div className={classes.note}>
@@ -8,7 +8,7 @@ export default function NoteItem({ title, content }) {
           <h2>{title}</h2>
           <p>{content}</p>
         </div>
-        <button>DELETE</button>
+        <button onClick={click}>DELETE</button>
       </div>
     </li>
   );

@@ -14,6 +14,14 @@ export default function Home() {
       return [...allNotes, newNote];
     });
   };
+
+  const deleteNote = (id) => {
+    setNotes((allNotes) => {
+      return allNotes.filter((note, index) => {
+        return index !== id;
+      });
+    });
+  };
   return (
     <Fragment>
       <Head>
@@ -35,6 +43,7 @@ export default function Home() {
                 id={id}
                 title={noteItem.title}
                 content={noteItem.content}
+                click={deleteNote}
               />
             </ul>
           );

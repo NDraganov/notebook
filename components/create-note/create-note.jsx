@@ -25,12 +25,14 @@ export default function CreateNote(props) {
       <form>
         <input
           type="text"
+          title="Title"
           name="title"
           value={note.title}
           onChange={handleChange}
           placeholder="Title"
         />
         <textarea
+          title="Content"
           name="content"
           value={note.content}
           onChange={handleChange}
@@ -38,7 +40,9 @@ export default function CreateNote(props) {
           placeholder="Take a note ..."
         ></textarea>
         <div>
-          <button onClick={submitNote}>ADD</button>
+          <button title="Add" onClick={submitNote}>
+            ADD
+          </button>
         </div>
       </form>
     </div>

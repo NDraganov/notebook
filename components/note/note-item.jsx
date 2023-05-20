@@ -11,7 +11,9 @@ export default function NoteItem(props) {
           <h2>{props.title}</h2>
           <p>{props.content}</p>
         </div>
-        <button onClick={handleClick}>DELETE</button>
+        <button title="Delete" onClick={handleClick}>
+          DELETE
+        </button>
       </div>
     </li>
   );

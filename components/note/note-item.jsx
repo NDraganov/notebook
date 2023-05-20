@@ -7,8 +7,8 @@ export default function NoteItem({ title, content }) {
         <div>
           <h2>{title}</h2>
           <p>{content}</p>
-          <button>DELETE</button>
         </div>
+        <button>DELETE</button>
       </div>
     </li>
   );

@@ -8,6 +8,12 @@ import classes from "./index.module.css";
 
 export default function Home() {
   const [notes, setNotes] = useState([]);
+
+  const addNote = (newNote) => {
+    setNotes((allNotes) => {
+      return [...allNotes, newNote];
+    });
+  };
   return (
     <Fragment>
       <Head>
@@ -20,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={classes.home}>
-        <CreateNote />
+        <CreateNote onAdd={addNote} />
         {notes.map((noteItem, id) => {
           return (
             <ul>

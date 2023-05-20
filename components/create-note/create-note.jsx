@@ -10,8 +10,8 @@ export default function CreateNote(props) {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setNote((notes) => {
-      return { ...notes, [name]: value };
+    setNote((allNotes) => {
+      return { ...allNotes, [name]: value };
     });
   };
 

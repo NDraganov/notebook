@@ -12,6 +12,11 @@ export default function CreateNote() {
     const value = event.target.value;
     setNote(value);
   };
+
+  const submitNote = (event) => {
+    event.preventDefault();
+    setNote({ title: "", content: "" });
+  };
   return (
     <div className={classes.note}>
       <form>
@@ -29,7 +34,7 @@ export default function CreateNote() {
           rows="7"
           placeholder="Take a note ..."
         ></textarea>
-        <button>ADD</button>
+        <button onClick={submitNote}>ADD</button>
       </form>
     </div>
   );

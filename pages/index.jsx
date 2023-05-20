@@ -1,10 +1,13 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import { useState } from "react";
+import CreateNote from "@/components/create-note/create-note";
+import NoteItem from "@/components/note/note-item";
 
 import classes from "./index.module.css";
-import CreateNote from "@/components/create-note/create-note";
 
 export default function Home() {
+  const [notes, setNotes] = useState([]);
   return (
     <Fragment>
       <Head>
@@ -18,6 +21,18 @@ export default function Home() {
       </Head>
       <div className={classes.home}>
         <CreateNote />
+        {notes.map((noteItem, id) => {
+          return (
+            <ul>
+              <NoteItem
+                key={id}
+                id={id}
+                title={noteItem.title}
+                content={noteItem.content}
+              />
+            </ul>
+          );
+        })}
       </div>
     </Fragment>
   );

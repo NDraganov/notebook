@@ -35,9 +35,9 @@ export default function Home() {
       </Head>
       <div className={classes.home}>
         <CreateNote onAdd={addNote} />
-        {notes.map((noteItem, id) => {
-          return (
-            <ul>
+        <ul>
+          {notes.map((noteItem, id) => {
+            return (
               <NoteItem
                 key={id}
                 id={id}
@@ -45,9 +45,9 @@ export default function Home() {
                 content={noteItem.content}
                 onDelete={deleteNote}
               />
-            </ul>
-          );
-        })}
+            );
+          })}
+        </ul>
       </div>
     </Fragment>
   );

@@ -20,16 +20,15 @@ NoteBook is a simple website where you can take digital notes.
 
 ### Screenshots
 
-![Desktop|100x100](./public/images/desktop.png "Desktop")
-![Desktop-data](./public/images/desktop-data.png "Desktop-data")
-![Desktop-bottom](./public/images/desktop-bottom.png "Desktop-bottom")
-<img src="./public/images/mobile.png" alt="mobile" width="300" height="500"/>
-<img src="./public/images/mobile-data.png" alt="mobile-data" width="300" height="500"/>
-<img src="./public/images/mobile-bottom.png" alt="mobile-bottom" width="300" height="500"/>
+![Desktop|100x100](./public/screenshots/desktop-empty.png "Desktop")
+![Desktop-data](./public/screenshots/desktop-notes.png "Desktop-notes")
+<img src="./public/screenshots/mobile-empty.png" alt="mobile" width="300" height="500"/>
+<img src="./public/screenshots/mobile-notes-top.png" alt="mobile-notes-top" width="300" height="500"/>
+<img src="./public/screenshots/mobile-notes-bottom.png" alt="mobile-notes-bottom" width="300" height="500"/>
 
 ### Links
 
-[Live site](https://notebook-rouge.vercel.app)
+[Live site](https://notebook-rouge.vercel.app) </br>
 [Source code](https://github.com/NDraganov/notebook)
 
 ## Development

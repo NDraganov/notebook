@@ -1,0 +1,43 @@
+.note {
+  display: grid;
+  place-items: center;
+  margin: 3rem 0;
+}
+.note form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--dark-green);
+  border-radius: 0.5rem;
+  box-shadow: 2px 3px 10px var(--dark-green);
+  width: 50vw;
+  padding: 1.5rem;
+}
+.note form input,
+.note form textarea {
+  background-color: var(--light-yellow);
+  border: none;
+  outline: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  resize: none;
+}
+.note form button {
+  position: absolute;
+  left: 40vw;
+  top: 28.5vh;
+  background: var(--dark-green);
+  color: var(--light-yellow);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: 2px 1px 3px var(--dark-green);
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.note form button:hover {
+  cursor: pointer;
+  background-color: var(--grey);
+  box-shadow: 2px 1px 3px var(--grey);
+}

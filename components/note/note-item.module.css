@@ -22,6 +22,7 @@
   font-size: 1.3rem;
   line-height: 1.3;
   word-wrap: break-word;
+  text-decoration: underline 1.7px var(--dark-green);
 }
 .note button {
   color: var(--dark-green);
